@@ -72,7 +72,7 @@ class ContactTableViewCell: UITableViewCell {
         containerView.addSubview(nameLabel)
         containerView.addSubview(jobTitleDetailedLabel)
         self.contentView.addSubview(containerView)
-        self.containerView.addSubview(countryImageView)
+        self.contentView.addSubview(countryImageView)
         
         profileImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
         profileImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10).isActive = true
