@@ -11,7 +11,6 @@
 		3AADFD1D25DA952500477BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADFD1C25DA952500477BFF /* SceneDelegate.swift */; };
 		3AADFD2425DA952700477BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AADFD2325DA952700477BFF /* Assets.xcassets */; };
 		3AADFD2725DA952700477BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AADFD2525DA952700477BFF /* LaunchScreen.storyboard */; };
-		3AADFD3425DBAD3600477BFF /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADFD3325DBAD3600477BFF /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		3AADFD2325DA952700477BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AADFD2625DA952700477BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AADFD2825DA952700477BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AADFD3325DBAD3600477BFF /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			children = (
 				3AADFD1A25DA952500477BFF /* AppDelegate.swift */,
 				3AADFD1C25DA952500477BFF /* SceneDelegate.swift */,
-				3AADFD3325DBAD3600477BFF /* ContactsViewController.swift */,
 				3AADFD2325DA952700477BFF /* Assets.xcassets */,
 				3AADFD2525DA952700477BFF /* LaunchScreen.storyboard */,
 				3AADFD2825DA952700477BFF /* Info.plist */,
@@ -135,7 +132,6 @@
 			files = (
 				3AADFD1B25DA952500477BFF /* AppDelegate.swift in Sources */,
 				3AADFD1D25DA952500477BFF /* SceneDelegate.swift in Sources */,
-				3AADFD3425DBAD3600477BFF /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
