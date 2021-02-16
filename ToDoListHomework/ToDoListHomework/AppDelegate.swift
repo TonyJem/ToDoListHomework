@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ToDoListHomework
-//
-//  Created by Office-iMac on 2021-02-15.
-//
-
 import UIKit
 
 @main

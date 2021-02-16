@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  ToDoListHomework
-//
-//  Created by Office-iMac on 2021-02-15.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  ToDoListHomework
-//
-//  Created by Office-iMac on 2021-02-15.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,7 +6,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-
