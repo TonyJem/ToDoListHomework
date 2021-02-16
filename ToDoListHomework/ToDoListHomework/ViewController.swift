@@ -5,6 +5,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let contacts = ContactAPI.getContacts()
 
     let contactsTableView: UITableView = {
         let tableView = UITableView()
@@ -29,21 +31,22 @@ extension ViewController {
 
     func setConstraintsToTableView() {
         NSLayoutConstraint.activate([
-            contactsTableView.topAnchor.constraint(equalTo: view.topAnchor),
-            contactsTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            contactsTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            contactsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            contactsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contactsTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            contactsTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            contactsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return contacts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = contacts[indexPath.row].name
         return cell
     }
 }

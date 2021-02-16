@@ -1,7 +1,6 @@
 import Foundation
 
 class ContactAPI {
-    private let contacts = ContactAPI.getContacts()
     
     static func getContacts() -> [Contact]{
         let contacts = [
@@ -17,4 +16,5 @@ class ContactAPI {
         ]
         return contacts
     }
+    
 }
