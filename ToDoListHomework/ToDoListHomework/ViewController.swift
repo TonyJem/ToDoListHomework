@@ -1,7 +1,3 @@
-// Ideas from:
-// https://dev.to/amclv/building-a-uitableview-programmatically-4e3m
-// https://softauthor.com/ios-uitableview-programmatically-in-swift/
-
 import UIKit
 
 class ViewController: UIViewController {
