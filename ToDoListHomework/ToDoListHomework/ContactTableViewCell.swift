@@ -2,6 +2,25 @@ import UIKit
 
 class ContactTableViewCell: UITableViewCell {
     
+    var contact: Contact? {
+        didSet {
+            guard let contactItem = contact else { return }
+            
+            if let name = contactItem.name {
+                profileImageView.image = UIImage(named: name)
+                nameLabel.text = name
+            }
+            
+            if let jobTitle = contactItem.jobTitle {
+                jobTitleDetailedLabel.text = " \(jobTitle) "
+            }
+            
+            if let country = contactItem.country {
+                countryImageView.image = UIImage(named: country)
+            }
+        }
+    }
+    
     let profileImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill // image will never be strecthed vertially or horizontally
