@@ -6,7 +6,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let tableView: UITableView = {
+    let contactsTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+        contactsTableView.delegate = self
+        contactsTableView.dataSource = self
         addSubviewsToMainView()
         setConstraintsToTableView()
     }
@@ -24,15 +24,15 @@ class ViewController: UIViewController {
 
 extension ViewController {
     func addSubviewsToMainView() {
-        view.addSubview(tableView)
+        view.addSubview(contactsTableView)
     }
 
     func setConstraintsToTableView() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            contactsTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            contactsTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            contactsTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            contactsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }
