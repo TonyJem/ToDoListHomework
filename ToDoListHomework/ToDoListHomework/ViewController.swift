@@ -5,7 +5,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private let contacts = ContactAPI.getContacts()
-
+    
     let contactsTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
 extension ViewController {
     
     func setNavigation() {
-     navigationItem.title = "Contacts"
-     self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.2431372549, green: 0.7647058824, blue: 0.8392156863, alpha: 1)
-     self.navigationController?.navigationBar.isTranslucent = false
+        navigationItem.title = "Contacts"
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.2431372549, green: 0.7647058824, blue: 0.8392156863, alpha: 1)
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(red: 1, green: 1, blue: 1, alpha: 1)]
     }
     
@@ -59,5 +59,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
         cell.contact = contacts[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
